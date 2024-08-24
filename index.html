@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* General Section Styling */
+      .relative {
+        position: relative;
+      }
+
+      .bg-gray-400 {
+        background-color: #d1d5db;
+      }
+
+      .bg-white {
+        background-color: #ffffff;
+      }
+
+      /* Card Styling */
+      .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .backdrop-filter {
+        backdrop-filter: blur(10px);
+      }
+
+      /* Container Styling */
+      .max-w-6xl {
+        max-width: 72rem;
+      }
+
+      /* Video Styling */
+      video {
+        filter: brightness(0.5);
+      }
+
+      /* Text Styling */
+      .text-gray-700 {
+        color: #4a5568;
+      }
+
+      .text-gray-600 {
+        color: #718096;
+      }
+
+      .text-gray-500 {
+        color: #a0aec0;
+      }
+
+      .text-lg {
+        font-size: 1.125rem;
+      }
+
+      .text-sm {
+        font-size: 0.875rem;
+      }
+
+      .font-semibold {
+        font-weight: 600;
+      }
+
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+
+      .shadow-lg {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex flex-col min-h-screen overflow-x-hidden">
+      <header class="bg-gray-900 text-white">
+        <div class="flex items-center justify-between py-4 px-4 md:px-6">
+          <a class="flex items-center gap-2" href="#">
+            <img src="/logo transparent.png" alt="logo" class="w-[100px]" />
+            <!-- <span class="text-lg font-semibold">Aspire</span> -->
+          </a>
+          <nav class="header-nav hidden gap-4 md:flex">
+            <a
+              class="p-3 hover:bg-slate-300 rounded-md m-2 duration-500 hover:text-black"
+              href="#"
+            >
+              Home
+            </a>
+            <a
+              class="p-3 hover:bg-slate-300 rounded-md m-2 duration-500 hover:text-black"
+              href="#"
+            >
+              Projects
+            </a>
+            <a
+              class="p-3 hover:bg-slate-300 rounded-md m-2 duration-500 hover:text-black"
+              href="#"
+            >
+              Contact
+            </a>
+          </nav>
+          <div class="flex items-center gap-2">
+            <button
+              class="bg-gray-100 text-gray-900 hover:bg-gray-200 h-9 rounded-md px-3 text-sm font-medium hidden md:inline-flex"
+            >
+              Get in Touch
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="flex-1">
+        <section class="section-content w-full py-12 md:py-24 lg:py-32">
+          <div
+            class="grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10"
+          >
+            <div class="space-y-4 p-3 m-3 ml-5">
+              <div
+                class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm"
+              >
+                AI-Powered Innovation
+              </div>
+              <h2
+                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+              >
+                Revolutionizing the Future with AI
+              </h2>
+              <p
+                class="max-w-[600px] text-gray-600 md:text-xl lg:text-base xl:text-xl"
+              >
+                Discover how our cutting-edge AI solutions are transforming
+                industries and shaping the world of tomorrow.
+              </p>
+              <div class="flex flex-col gap-2 sm:flex-row">
+                <a
+                  href="#"
+                  class="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-600"
+                >
+                  Explore Projects
+                </a>
+                <a
+                  href="#"
+                  class="inline-flex h-10 items-center justify-center rounded-md border border-gray-300 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-600"
+                >
+                  Contact Us
+                </a>
+              </div>
+            </div>
+            <img
+              src="/one.jpg"
+              width="550"
+              height="310"
+              alt="Hero"
+              class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last hover:scale-105 duration-300"
+            />
+          </div>
+        </section>
+        <section
+          class="section-content w-full py-12 md:py-24 lg:py-32 bg-gray-400"
+        >
+          <div
+            class="grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10"
+          >
+            <img
+              src="/three.jpg"
+              width="550"
+              height="310"
+              alt="Project 1"
+              class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full hover:scale-105 duration-300"
+            />
+            <div class="space-y-4">
+              <div
+                class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm"
+              >
+                AI-Powered Project
+              </div>
+              <h2
+                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+              >
+                Rice Grain Analyzer
+              </h2>
+              <p
+                class="max-w-[600px] text-gray-600 md:text-xl lg:text-base xl:text-xl"
+              >
+                Our AI-powered rice grain analyzer uses advanced computer vision
+                and machine learning algorithms to accurately classify and grade
+                different rice varieties. This technology is revolutionizing the
+                agricultural industry.
+              </p>
+              <a
+                href="#"
+                class="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-600"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="section-content w-full py-12 md:py-24 lg:py-32">
+          <div
+            class="grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10"
+          >
+            <div class="space-y-4">
+              <div
+                class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm"
+              >
+                Hardware Innovation
+              </div>
+              <h2
+                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+              >
+                Introducing Our Latest Project
+              </h2>
+              <p
+                class="max-w-[600px] text-gray-600 md:text-xl lg:text-base xl:text-xl"
+              >
+                Stay tuned for our upcoming project that combines cutting-edge
+                hardware and AI technology to revolutionize the way we interact
+                with the world around us.
+              </p>
+              <a
+                href="#"
+                class="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-600"
+              >
+                Learn More
+              </a>
+            </div>
+            <img
+              src="/two.jpg"
+              width="550"
+              height="310"
+              alt="Project 2"
+              class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last hover:scale-105 duration-300"
+            />
+          </div>
+        </section>
+        <section
+          class="relative w-full bg-gray-400 py-12 md:py-24 lg:py-32 flex flex-col items-center"
+        >
+          <!-- Background Video -->
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover z-0"
+          >
+            <source src="/NN.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <!-- Content Overlay -->
+          <div class="relative z-10 w-full max-w-6xl px-4">
+            <div class="space-y-8">
+              <!-- Card 1: Image Left, Text Right -->
+              <div
+                class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-lg p-6 border-4 border-gray-300 backdrop-filter backdrop-blur-md"
+              >
+                <img
+                  src="/sachin.jpeg"
+                  alt="Sachin Jayadevaiah"
+                  class="w-[250px] h-[250px] rounded-full mb-4 md:mb-0 md:mr-6 object-cover shadow-md border-4 border-gray-200"
+                />
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Sachin Jayadevaiah</h3>
+                  <p class="text-sm text-gray-600 mb-4">Founder & CEO</p>
+                  <p class="text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque tenetur voluptatibus ipsam aperiam adipisci quasi
+                    nemo aliquid praesentium suscipit officia.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 2: Image Right, Text Left -->
+              <div
+                class="flex flex-col md:flex-row-reverse items-center bg-white rounded-lg shadow-lg p-6 border-4 border-gray-300 backdrop-filter backdrop-blur-md"
+              >
+                <img
+                  src="/3-2.JPG"
+                  alt="KiranKumar E"
+                  class="w-[250px] h-[250px] rounded-full mb-4 md:mb-0 md:ml-6 object-cover shadow-md border-4 border-gray-200"
+                />
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">KiranKumar E</h3>
+                  <p class="text-sm text-gray-600 mb-4">CTO</p>
+                  <p class="text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Hic, vel alias? Similique doloribus eveniet accusamus ex,
+                    officiis facere porro quasi natus at error autem alias iusto
+                    minima esse eaque consectetur?
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 3: Image Left, Text Right -->
+              <div
+                class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-lg p-6 border-4 border-gray-300 backdrop-filter backdrop-blur-md"
+              >
+                <img
+                  src="/rishik.jpeg"
+                  alt="Rishik Puneet M"
+                  class="w-[250px] h-[250px] rounded-full mb-4 md:mb-0 md:mr-6 object-cover shadow-md border-4 border-gray-200"
+                />
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Rishik Puneet M</h3>
+                  <p class="text-sm text-gray-600 mb-4">ABC</p>
+                  <p class="text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus a iusto consequuntur odit eaque nam hic. Saepe ratione
+                    aliquam facilis qui voluptatum illum, voluptatibus
+                    consequatur cum animi veniam quaerat ducimus?
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 4: Image Right, Text Left -->
+              <div
+                class="flex flex-col md:flex-row-reverse items-center bg-white rounded-lg shadow-lg p-6 border-4 border-gray-300 backdrop-filter backdrop-blur-md"
+              >
+                <img
+                  src="/one.jpg"
+                  alt="Prasad M"
+                  class="w-[250px] h-[250px] rounded-full mb-4 md:mb-0 md:ml-6 object-cover shadow-md border-4 border-gray-200"
+                />
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Prasad M</h3>
+                  <p class="text-sm text-gray-600 mb-4">Designer</p>
+                  <p class="text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus a iusto consequuntur odit eaque nam hic. Saepe ratione
+                    aliquam facilis qui voluptatum illum, voluptatibus
+                    consequatur cum animi veniam quaerat ducimus?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <hr class="bg-black h-1" />
+      <div
+        class="bg-gray-100 p-6 md:py-12 w-screen flex items-center justify-center"
+      >
+        <div
+          class="w-screen grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 text-sm"
+        >
+          <div
+            class="grid gap-1 hover:bg-slate-800 duration-500 rounded-md p-3 hover:text-white"
+          >
+            <h3 class="font-semibold">Company</h3>
+            <a href="#">About Us</a>
+            <a href="#">Our Team</a>
+            <a href="#">Careers</a>
+            <a href="#">News</a>
+          </div>
+          <div
+            class="grid gap-1 hover:bg-slate-800 duration-500 rounded-md p-3 hover:text-white"
+          >
+            <h3 class="font-semibold">Products</h3>
+            <a href="#">Rice Grain Analyzer</a>
+            <a href="#">Upcoming Project</a>
+          </div>
+          <div
+            class="grid gap-1 hover:bg-slate-800 duration-500 rounded-md p-3 hover:text-white"
+          >
+            <h3 class="font-semibold">Resources</h3>
+            <a href="#">Blog</a>
+            <a href="#">Documentation</a>
+            <a href="#">FAQs</a>
+          </div>
+          <div
+            class="grid gap-1 hover:bg-slate-800 duration-500 rounded-md p-3 hover:text-white"
+          >
+            <h3 class="font-semibold">Legal</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
